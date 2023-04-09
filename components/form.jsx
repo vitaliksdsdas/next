@@ -14,7 +14,7 @@ const Form = ({ handleRegOrLog, text }) => {
 
       <form
         className="flex gap-8 flex-col text-white "
-        onSubmit={handleSubmit(handleRegOrLog)}
+        onSubmit={handleSubmit(() => alert(data))}
       >
         <input
           placeholder="email"
